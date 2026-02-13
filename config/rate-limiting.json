@@ -1,0 +1,25 @@
+{
+  "services": {
+    "gmail": {
+      "requests_per_minute": 10,
+      "burst_capacity": 20,
+      "cooldown_period": 60
+    },
+    "whatsapp": {
+      "requests_per_minute": 30,
+      "burst_capacity": 60,
+      "cooldown_period": 30
+    },
+    "banking": {
+      "requests_per_minute": 5,
+      "burst_capacity": 10,
+      "cooldown_period": 300
+    }
+  },
+  "global": {
+    "max_concurrent_requests": 10,
+    "default_timeout": 30,
+    "retry_attempts": 3,
+    "backoff_multiplier": 2
+  }
+}

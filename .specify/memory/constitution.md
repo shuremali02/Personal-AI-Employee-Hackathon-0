@@ -1,55 +1,57 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Personal AI Employee Hackathon 0 Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Local-First Privacy Architecture
+All sensitive data, credentials, and personal communications must remain on the user's local device using Obsidian as the secure, local knowledge base. No credentials or sensitive communications should ever sync to cloud systems. The system must implement end-to-end encryption for sensitive data at rest and prioritize local processing over cloud-based alternatives. This ensures maximum privacy and security for user data.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Human-in-the-Loop Safety
+Critical actions, particularly those involving finances, sensitive communications, or irreversible operations, must require explicit human approval before execution. The system must implement robust approval workflows and maintain clear audit trails of all AI decisions. Humans remain accountable for AI employee actions, and the system must provide transparent visibility into all automated processes.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Agent-Driven Autonomy
+The AI employee must operate proactively through continuous monitoring and automated response patterns, using Claude Code as the primary reasoning engine. The system should implement the "Ralph Wiggum" persistence pattern to continue operations until tasks reach completion. The agent must transform from a reactive chatbot to a proactive business partner that initiates actions based on detected opportunities and needs.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Modular Architecture
+The system must follow a modular design with clear separation of concerns between the Brain (Claude Code), Memory/GUI (Obsidian), Senses (Watchers), and Hands (MCP servers). Each component should be independently testable and maintainable, following the Unix philosophy of doing one thing well.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Security-First Implementation
+The system must implement comprehensive security controls including zero-trust credential management, development sandboxes to prevent production accidents, rate limiting and permission boundaries, and comprehensive audit logging with 90+ day retention. All sensitive operations must follow the principle of least privilege and include multiple layers of protection against unauthorized access or actions.
 
-### [PRINCIPLE_6_NAME]
+### Ethical AI Operation
+AI autonomy must be bounded appropriately, with clear restrictions on autonomous actions in emotional contexts, legal matters, medical decisions, financial edge cases, and irreversible operations. The system must provide clear disclosure of AI-assisted communications and maintain opt-out mechanisms for contact parties. Regular human oversight is mandatory and non-negotiable.
 
+## Development Philosophy
 
-[PRINCIPLE__DESCRIPTION]
+### Iterative Approach
+Development must follow the tiered progression from Bronze (foundation) to Silver (functional assistant) to Gold (autonomous employee) to Platinum (cloud deployment). Each tier builds upon the previous with comprehensive testing for each component before integration. Maintain backward compatibility throughout the development process and ensure each milestone delivers tangible value.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Quality Assurance
+Implement comprehensive testing for all automation flows, including security audits for credential handling, performance benchmarks for responsiveness, and user acceptance testing for all features. All changes must include appropriate test coverage and verification of expected behavior before deployment.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Documentation Standards
+Maintain clear setup and installation guides, comprehensive API documentation, security and privacy impact assessments, and troubleshooting and recovery procedures. All system components must be thoroughly documented to ensure reproducible results and maintainable code.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Operational Excellence
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Architecture Components
+The system must implement the four core components: Claude Code as the reasoning engine, Obsidian vault for persistent state and knowledge, Python watcher scripts for continuous monitoring, and MCP servers for external system interactions. The orchestrator manages coordination and health monitoring of all components.
+
+### Security Framework
+Implement zero-trust credential management using environment variables and dedicated secrets managers, separation of development and production environments, comprehensive audit logging with 90+ day retention, and mandatory approval flows for financial and sensitive operations.
+
+### Error Handling and Recovery
+Design systems with graceful degradation when components fail, redundant systems and automated recovery procedures, comprehensive backup and disaster recovery procedures, and continuous monitoring with automated health checks.
+
+## Risk Management
+
+### Identified Risks
+The system must address security vulnerabilities in credential handling, AI making inappropriate autonomous decisions, system failures causing business disruption, and privacy concerns with personal data processing.
+
+### Mitigation Strategies
+Implement multi-layered security controls and monitoring, comprehensive approval workflows for sensitive actions, redundant systems and automated recovery procedures, and regular security audits and penetration testing.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+The Personal AI Employee Hackathon 0 Constitution governs all development, design, and implementation decisions. All participants must comply with these principles, and any amendments require explicit documentation and community approval. The constitution supersedes all other practices and guidelines established for this project. All code reviews and testing must verify compliance with constitutional principles, and complexity must be justified against the core mission of building effective autonomous FTEs.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-02-12 | **Last Amended**: 2026-02-12
