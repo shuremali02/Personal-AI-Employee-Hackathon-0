@@ -1,0 +1,145 @@
+# Foundation Setup API Contract
+
+## Overview
+This contract defines the interfaces and interactions for the foundation setup components of the Personal AI Employee Hackathon 0.
+
+## MCP Server Contract
+
+### Filesystem MCP Interface
+```yaml
+openapi: 3.0.0
+info:
+  title: Filesystem MCP for AI Employee
+  version: 1.0.0
+  description: Filesystem operations for the AI Employee foundation
+
+paths:
+  /files/read:
+    post:
+      summary: Read a file from the vault
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                  description: Path to the file to read
+      responses:
+        '200':
+          description: File content retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content:
+                    type: string
+                    description: Content of the file
+        '404':
+          description: File not found
+
+  /files/write:
+    post:
+      summary: Write content to a file in the vault
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                  description: Path to the file to write
+                content:
+                  type: string
+                  description: Content to write to the file
+      responses:
+        '200':
+          description: File written successfully
+        '500':
+          description: Failed to write file
+
+  /files/list:
+    post:
+      summary: List files in a directory
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                  description: Path to the directory to list
+      responses:
+        '200':
+          description: Directory listing retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  files:
+                    type: array
+                    items:
+                      type: string
+                    description: List of files in the directory
+```
+
+### Setup Verification Contract
+```yaml
+openapi: 3.0.0
+info:
+  title: Setup Verification API
+  version: 1.0.0
+  description: API for verifying foundation setup completion
+
+paths:
+  /setup/status:
+    get:
+      summary: Get the current status of the foundation setup
+      responses:
+        '200':
+          description: Current setup status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  overall_status:
+                    type: string
+                    enum: [not_started, in_progress, completed, failed]
+                  components:
+                    type: object
+                    properties:
+                      development_environment:
+                        type: string
+                        enum: [pending, completed, failed]
+                      security:
+                        type: string
+                        enum: [pending, completed, failed]
+                      obsidian_vault:
+                        type: string
+                        enum: [pending, completed, failed]
+                      mcp_servers:
+                        type: string
+                        enum: [pending, completed, failed]
+                      external_services:
+                        type: string
+                        enum: [pending, completed, failed]
+                  completed_checklist_items:
+                    type: integer
+                  total_checklist_items:
+                    type: integer
+                  setup_started_at:
+                    type: string
+                    format: date-time
+                  setup_completed_at:
+                    type: string
+                    format: date-time
+```

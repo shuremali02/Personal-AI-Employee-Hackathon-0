@@ -1,0 +1,54 @@
+{
+  "services": {
+    "gmail": {
+      "enabled": false,
+      "api_enabled": false,
+      "credentials_required": true,
+      "oauth_required": true,
+      "scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly",
+        "https://www.googleapis.com/auth/gmail.send"
+      ]
+    },
+    "whatsapp": {
+      "enabled": false,
+      "web_enabled": true,
+      "credentials_required": true,
+      "session_required": true
+    },
+    "banking": {
+      "enabled": false,
+      "api_enabled": false,
+      "credentials_required": true,
+      "api_key_required": true
+    }
+  },
+  "watchers": {
+    "gmail_watcher": {
+      "enabled": false,
+      "poll_interval": 60,
+      "actions": ["check_new_emails", "forward_important", "schedule_responses"]
+    },
+    "whatsapp_watcher": {
+      "enabled": false,
+      "poll_interval": 30,
+      "actions": ["check_messages", "auto_respond", "escalate_issues"]
+    },
+    "finance_watcher": {
+      "enabled": false,
+      "poll_interval": 300,
+      "actions": ["monitor_transactions", "alert_unusual_activity", "generate_reports"]
+    }
+  },
+  "security": {
+    "rate_limiting": {
+      "enabled": true,
+      "requests_per_minute": 60
+    },
+    "authentication_cache": {
+      "enabled": true,
+      "ttl_seconds": 3600
+    },
+    "connection_timeout": 30
+  }
+}
