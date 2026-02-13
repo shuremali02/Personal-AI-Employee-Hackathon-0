@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-13T22:42:15.204601",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/SAMPLE_work_request.md",
+    "destination": "AI_Employee_Vault/Plans/SAMPLE_work_request.md",
+    "reason": "Plan created: PLAN_ac791a41_Sample_Work_Request",
+    "file_size": 765
+  }
+}

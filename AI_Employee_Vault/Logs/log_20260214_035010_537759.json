@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-14T03:50:10.537801",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_034909_34_3 days left to get Visily 50 off.md",
+    "destination": "AI_Employee_Vault/Plans/EMAIL_20260214_034909_34_3 days left to get Visily 50 off.md",
+    "reason": "Plan created: PLAN_fa1edc75_Email_Processing_Request:_🕒 3_days_left_to_get_Visily_50%_off",
+    "file_size": 2356
+  }
+}

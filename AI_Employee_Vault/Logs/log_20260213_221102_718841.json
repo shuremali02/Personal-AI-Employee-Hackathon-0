@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-02-13T22:11:02.718897",
+  "skill": "ApprovalManager",
+  "action": "approval_request_created",
+  "details": {
+    "approval_id": "APPROVAL_84ea318a_integration_test",
+    "action_type": "integration_test",
+    "urgency": "normal",
+    "requester": "AI Employee",
+    "save_path": "AI_Employee_Vault/Pending_Approval/APPROVAL_84ea318a_integration_test.md"
+  }
+}

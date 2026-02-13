@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-02-14T03:50:09.885206",
+  "skill": "FileProcessor",
+  "action": "file_processed",
+  "details": {
+    "file": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_034909_33_Its live 50 off Visily Annual  team seats.md",
+    "action": "create_plan",
+    "parsed_keys": [
+      "filename",
+      "filepath",
+      "size",
+      "frontmatter",
+      "content_preview",
+      "word_count",
+      "has_checkboxes",
+      "has_links",
+      "headers"
+    ]
+  }
+}

@@ -1,43 +1,44 @@
-# Implementation Plan: Personal AI Employee Hackathon 0 - Foundation Setup
+# Implementation Plan: [FEATURE]
 
-**Branch**: `001-foundation-setup` | **Date**: 2026-02-12 | **Spec**: [specs/001-foundation-setup/spec.md](specs/001-foundation-setup/spec.md)
-**Input**: Feature specification from `/specs/001-foundation-setup/spec.md`
+**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 
-The foundation setup establishes the prerequisite infrastructure for the Personal AI Employee Hackathon 0, including development environment configuration, security foundations, Obsidian vault initialization, MCP server setup, and external service access configuration. This phase prepares the ground for subsequent Bronze tier implementation by ensuring all necessary components and security measures are in place.
+[Extract from feature spec: primary requirement + technical approach from research]
 
 ## Technical Context
 
-**Language/Version**: Python 3.13+, Node.js v24+ LTS, Claude Code (4.5 Opus or router with Free Gemini)
-**Primary Dependencies**: Obsidian v1.10.6+, GitHub Desktop, MCP Servers, uv (Python project manager), PM2 (optional process manager)
-**Storage**: Local file system for Obsidian vault and configuration files
-**Testing**: Manual verification of installation and configuration steps
-**Target Platform**: Linux/macOS/Windows desktop environment for local development
-**Project Type**: Local development environment setup (single-project foundation)
-**Performance Goals**: All setup steps completed within specified timeframes (2 hours for software, 30 min for vault, 1 hour for external services)
-**Constraints**: Local-first architecture with no cloud sync of credentials, security-first implementation with credential management
-**Scale/Scope**: Single-user development environment supporting hackathon participation
+<!--
+  ACTION REQUIRED: Replace the content in this section with the technical details
+  for the project. The structure here is presented in advisory capacity to guide
+  the iteration process.
+-->
+
+**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
+**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
+**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
+**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
+**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: [single/web/mobile - determines source structure]  
+**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
+**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
+**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- **Local-First Privacy Architecture**: ✅ Foundation setup ensures all sensitive data remains on local device, with proper credential management and no cloud sync of credentials
-- **Human-in-the-Loop Safety**: ✅ All security-sensitive configurations require explicit user verification and approval
-- **Modular Architecture**: ✅ Setup establishes clear separation between Brain (Claude Code), Memory (Obsidian), Senses (Watchers), and Hands (MCP servers)
-- **Security-First Implementation**: ✅ All security measures implemented during foundation phase, including zero-trust credential management and audit logging
-- **Iterative Approach**: ✅ Foundation setup follows Bronze tier requirements as defined in the constitution
-- **Quality Assurance**: ✅ All components verified functional before proceeding to next phase
+[Gates determined based on constitution file]
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/001-foundation-setup/
+specs/[###-feature]/
 ├── plan.md              # This file (/sp.plan command output)
 ├── research.md          # Phase 0 output (/sp.plan command)
 ├── data-model.md        # Phase 1 output (/sp.plan command)
@@ -47,35 +48,51 @@ specs/001-foundation-setup/
 ```
 
 ### Source Code (repository root)
+<!--
+  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
+  for this feature. Delete unused options and expand the chosen structure with
+  real paths (e.g., apps/admin, packages/something). The delivered plan must
+  not include Option labels.
+-->
 
 ```text
-# Single project foundation setup
-setup-scripts/
-├── install-dependencies.sh
-├── configure-security.sh
-├── initialize-vault.sh
-└── verify-setup.sh
+# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
+src/
+├── models/
+├── services/
+├── cli/
+└── lib/
 
-.mcp/
-├── config.json
-└── servers/
-    ├── email-mcp/
-    ├── browser-mcp/
-    └── filesystem-mcp/
+tests/
+├── contract/
+├── integration/
+└── unit/
 
-.obsidian/
-└── vault-configuration/
+# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
+backend/
+├── src/
+│   ├── models/
+│   ├── services/
+│   └── api/
+└── tests/
 
-# Obsidian vault structure
-AI_Employee_Vault/
-├── Dashboard.md
-├── Company_Handbook.md
-├── Inbox/
-├── Needs_Action/
-└── Done/
+frontend/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+└── tests/
+
+# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
+api/
+└── [same as backend above]
+
+ios/ or android/
+└── [platform-specific structure: feature modules, UI flows, platform tests]
 ```
 
-**Structure Decision**: Single-project foundation setup with dedicated configuration files for MCP servers, Obsidian vault initialization, and setup verification scripts. This structure supports the modular architecture principle while maintaining local-first approach.
+**Structure Decision**: [Document the selected structure and reference the real
+directories captured above]
 
 ## Complexity Tracking
 
@@ -83,5 +100,5 @@ AI_Employee_Vault/
 
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |-----------|------------|-------------------------------------|
-| Multiple component setup | Foundation requires coordination of Claude Code, Obsidian, MCP servers, and external services | Would not meet modular architecture requirements of the constitution |
-| Security complexity | Multi-layered security configuration needed for credential management | Simplified security would not meet security-first implementation principle |
+| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
+| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |

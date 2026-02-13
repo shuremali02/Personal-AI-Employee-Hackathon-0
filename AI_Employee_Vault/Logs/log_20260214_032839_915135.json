@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-14T03:28:39.915156",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_025301_1_ Finish setting up your new Google Account on your.md",
+    "destination": "AI_Employee_Vault/Plans/EMAIL_20260214_025301_1_ Finish setting up your new Google Account on your.md",
+    "reason": "Standard processing",
+    "file_size": 2894
+  }
+}

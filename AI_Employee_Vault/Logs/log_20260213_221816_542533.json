@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-13T22:18:16.542561",
+  "skill": "FileProcessor",
+  "action": "file_processed",
+  "details": {
+    "file": "AI_Employee_Vault/Needs_Action/ERROR_test_file.md",
+    "action": "standard_processing",
+    "parsed_keys": [
+      "filename",
+      "filepath",
+      "error"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-02-14T03:37:53.160982",
+  "skill": "FileProcessor",
+  "action": "file_processed",
+  "details": {
+    "file": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_033730_20_Your promised reward 48 hours only.md",
+    "action": "send_to_approval",
+    "parsed_keys": [
+      "filename",
+      "filepath",
+      "size",
+      "frontmatter",
+      "content_preview",
+      "word_count",
+      "has_checkboxes",
+      "has_links",
+      "headers"
+    ]
+  }
+}

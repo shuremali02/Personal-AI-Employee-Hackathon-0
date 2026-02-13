@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-14T03:50:10.392697",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_034909_33_Its live 50 off Visily Annual  team seats.md",
+    "destination": "AI_Employee_Vault/Plans/EMAIL_20260214_034909_33_Its live 50 off Visily Annual  team seats.md",
+    "reason": "Plan created: PLAN_5ac5d868_Email_Processing_Request:_It’s_live:_50%_off_Visily_Annual_+_team_seats_⚡",
+    "file_size": 2851
+  }
+}

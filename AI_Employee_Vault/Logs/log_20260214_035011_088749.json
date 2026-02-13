@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-14T03:50:11.088776",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_034909_35_Final day  50 off ends tonight.md",
+    "destination": "AI_Employee_Vault/Plans/EMAIL_20260214_034909_35_Final day  50 off ends tonight.md",
+    "reason": "Plan created: PLAN_f7a3a988_Email_Processing_Request:_Final_day_—_50%_off_ends_tonight_🚨",
+    "file_size": 2436
+  }
+}

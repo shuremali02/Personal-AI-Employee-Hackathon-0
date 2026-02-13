@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-14T03:50:12.893460",
+  "skill": "FileMover",
+  "action": "file_moved",
+  "details": {
+    "source": "AI_Employee_Vault/Needs_Action/EMAIL_20260214_034912_42_ Ending 2025 w a release  look inside Visily.md",
+    "destination": "AI_Employee_Vault/Plans/EMAIL_20260214_034912_42_ Ending 2025 w a release  look inside Visily.md",
+    "reason": "Standard processing",
+    "file_size": 3084
+  }
+}
